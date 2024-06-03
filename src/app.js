@@ -51,7 +51,7 @@ app.post("/api/v1/details", (req, res) => {
     JSON.stringify(userDetails),
     (err) => {
       res.status(201).json({
-        status: "Success",
+        status: "success",
         message: "User registered successfully",
         data: {
           userDetails: newUser,
