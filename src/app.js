@@ -29,7 +29,7 @@ fs.writeFile(`${__dirname}/data/userDetails.json`,
 JSON.stringify(userDetails),
 (err) => {
   res.status(200).json({
-    status: "Success",
+    status: "success",
     message: `User details updated successfully for id: ${updateDetails.id}`,
     data: {
       userDetails: updateDetails,
@@ -51,7 +51,7 @@ app.post("/api/v1/details", (req, res) => {
     JSON.stringify(userDetails),
     (err) => {
       res.status(201).json({
-        status: "success",
+        status: "Success",
         message: "User registered successfully",
         data: {
           userDetails: newUser,
